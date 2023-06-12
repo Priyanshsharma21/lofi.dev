@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Bangers&family=Barlow:wght@300;400&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Castoro&family=Cinzel:wght@500;600;700&family=Comfortaa:wght@400;500&family=Dosis:wght@300;400&family=Fredoka:wght@300&family=Gloria+Hallelujah&family=Halant:wght@300&family=IBM+Plex+Sans:wght@100;200;300;500&family=Josefin+Sans:ital,wght@0,200;0,500;1,100&family=Lato&family=Lobster&family=M+PLUS+1:wght@200&family=Marcellus+SC&family=Maven+Pro:wght@500;600&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;400&family=Mukta:wght@200&family=Nanum+Gothic:wght@700&family=News+Cycle&family=Newsreader:opsz,wght@6..72,200;6..72,400&family=Noto+Sans&family=Nunito+Sans&family=Open+Sans:wght@400;500&family=Oswald&family=PT+Sans+Narrow:wght@400;700&family=Phudu:wght@300;400&family=Playfair+Display:wght@500;900&family=Poppins&family=Press+Start+2P&family=Prompt&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,200;0,500;1,400&family=Readex+Pro:wght@600&family=Reem+Kufi+Fun:wght@400;500&family=Roboto:ital,wght@0,100;1,400&family=Rubik+Vinyl&family=Sarabun:wght@200&family=Satisfy&family=Signika:wght@300&family=Source+Code+Pro:wght@300;700&family=Syncopate:wght@400;700&family=Tajawal&family=Ubuntu:ital,wght@0,300;1,700&family=Varela+Round&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  /* background: black; */
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
+.heading_of_app{
+  margin-top: 7rem;
+}
+
+.logo_text {
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+}
+
+
+.main_lofi{
+  margin-top: 3.5rem;
+}
+.container {
+  margin: 0px 8rem 0px 8rem;
+}
+
+.social_link {
+  transition: all 0.2s linear;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  width: 83%;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+
+@media (max-width: 1225px) {
+  .navbar {
+    width: 75%;
+  }
+}
+
+@media (max-width: 859px) {
+  .navbar {
+    width: 65%;
+  }
+}
+
+.icon_lofi {
+  /* background: linear-gradient(to right, #87ceeb, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: rgb(191, 100, 248);
+  font-size: 1.2rem;
+}
+
+.head_text {
+  font-size: 3rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.dot {
+  color: white;
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+.heading_of_app{
+  transition: all 2s ease-in-out;
+}
+.head_text {
+  font-size: 3rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.relex {
+  /* background: linear-gradient(to right, #e8469f, #9969ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  animation: glowme 9s infinite;
+  transition: all 0.3s ease-in-out;
+  animation-delay: 0s;
+}
+
+.chill {
+  /* background: linear-gradient(to right, #87e4eb, #69ffdc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  animation: glowme2 9s infinite;
+  transition: all 0.3s ease-in-out;
+  animation-delay: 3s;
+}
+
+.code {
+  /* background: linear-gradient(to right, #f5a628, #ffeb69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  animation: glowme3 9s infinite;
+  transition: all 0.3s ease-in-out;
+  animation-delay: 6s;
+}
+
+@keyframes glowme {
+  0% {
+    background: linear-gradient(to right, #e8469f, #9969ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+}
+
+@keyframes glowme2 {
+  0% {
+    background: linear-gradient(to right, #87e4eb, #69ffdc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+}
+
+@keyframes glowme3 {
+  0% {
+    background: linear-gradient(to right, #f5a628, #ffeb69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+}
+
+
+
+.img_main{
+  transition: all 0.4s linear;
+}
+
+.img_main:hover{
+transform: scale(1.04);
+}
+
+.img_main:active{
+  transform: scale(0.96);
+}
+
+.build_with,.name{
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.icons{
+  display: flex;
+}
+
+
+@media (max-width: 745px) {
+  .container {
+    margin: 0px 0rem 0px 0rem;
+  }
+  .navbar {
+    width:100%;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+
+  .social{
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 461px) {
+  .head_text {
+    font-size: 1.5rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    color: white;
+  }
+  .build_with,.name{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  .dot {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+
+.inp_vol{
+  bottom: 1rem;
+}
+
+
+
+input[type="range"] {
+  position: absolute;
+  width: 6rem;
+  height: 0.75rem;
+  background-color: rgba(79, 209, 197, 0.75);
+  border-radius: 9999px;
+  opacity: 0.75;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: #d88d1d;
+  border: 2px solid #d8a91d;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+input[type="range"]::-webkit-slider-thumb:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.5);
+}
