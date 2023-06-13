@@ -10,55 +10,55 @@ import { RiTodoLine } from 'react-icons/ri'
 import { Button, Modal } from 'antd';
 
 const Navbar = () => {
-  const [pomotimer, setPomodoroTimer] = useState(0);
-  const [showTomato, setShowTomato] = useState(true);
-  const [play, setPlay] = useState(false);
+//   const [pomotimer, setPomodoroTimer] = useState(0);
+//   const [showTomato, setShowTomato] = useState(true);
+//   const [play, setPlay] = useState(false);
   const [open, setOpen] = useState(false);
   const [notes, setNotes] = useState('');
 
 
 
   // timer logic
-  useEffect(() => {
-    let timerId;
+//   useEffect(() => {
+//     let timerId;
 
-    if (pomotimer > 0 && play) {
-      timerId = setTimeout(() => {
-        setPomodoroTimer((prevTime) => prevTime - 1);
-      }, 1000);
-    } else if (pomotimer === 0) {
-      setShowTomato(true);
-    }
+//     if (pomotimer > 0 && play) {
+//       timerId = setTimeout(() => {
+//         setPomodoroTimer((prevTime) => prevTime - 1);
+//       }, 1000);
+//     } else if (pomotimer === 0) {
+//       setShowTomato(true);
+//     }
 
-    return () => clearTimeout(timerId);
-  }, [pomotimer, play]);
+//     return () => clearTimeout(timerId);
+//   }, [pomotimer, play]);
 
-  const handlePomo = () => {
-    if (play) {
-      setPlay(false);
-      return;
-    }
+//   const handlePomo = () => {
+//     if (play) {
+//       setPlay(false);
+//       return;
+//     }
   
-    if (pomotimer === 0) {
-      setPomodoroTimer(25 * 60); // 25 minutes in seconds
-      setShowTomato(false);
-    }
+//     if (pomotimer === 0) {
+//       setPomodoroTimer(25 * 60); // 25 minutes in seconds
+//       setShowTomato(false);
+//     }
   
-    setPlay(true);
-  };
+//     setPlay(true);
+//   };
   
 
-  const handleReset = () => {
-    setPomodoroTimer(0);
-    setShowTomato(true);
-    setPlay(false);
-  };
+//   const handleReset = () => {
+//     setPomodoroTimer(0);
+//     setShowTomato(true);
+//     setPlay(false);
+//   };
 
-  const formatTime = (time) => {
-    const minutes = Math.floor(time / 60);
-    const seconds = time % 60;
-    return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-  };
+//   const formatTime = (time) => {
+//     const minutes = Math.floor(time / 60);
+//     const seconds = time % 60;
+//     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+//   };
 
 
 
@@ -80,7 +80,7 @@ const Navbar = () => {
       </div>
 
       <div className="pomodoro_note flex items-center">
-        {showTomato ? (
+        {/* {showTomato ? (
           <div className="tomato cursor-pointer" onClick={handlePomo}>
             <GiTomato className="tomato_main text-red-500" />
           </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
 
 
         <div className="notes cursor-pointer ml-2 text-center flex justify-center items-center" onClick={() => setOpen(true)}>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 placeholder="Enter your notes..."
                 value={notes}
                 onChange={handleNotesChange}
-            ></textarea>
+            />
         </Modal>
       </div>
 
