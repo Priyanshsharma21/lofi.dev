@@ -61,15 +61,7 @@ const Navbar = () => {
   };
 
 
-  // notes logic
-  const handleNotesClick = () => {
-    setShowModal(true);
-  };
-  
-  const handleModalClose = () => {
-    setShowModal(false);
-  };
-  
+
   const handleNotesChange = (event) => {
     setNotes(event.target.value);
   };
