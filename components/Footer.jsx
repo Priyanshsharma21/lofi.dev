@@ -1,7 +1,7 @@
 import React from 'react'
 import { SiNextdotjs,SiTailwindcss } from 'react-icons/si'
 import { GrReactjs } from 'react-icons/gr'
-import { AiFillHeart } from 'react-icons/ai'
+import { AiFillHeart,AiOutlineCloudUpload } from 'react-icons/ai'
 
 
 const Footer = () => {
@@ -13,6 +13,7 @@ const Footer = () => {
                 <SiNextdotjs className="foot_icons text-white mt-1 ml-3"/>
                 <SiTailwindcss className="foot_icons ml-3 mt-1 text-blue-500"/>
                 <GrReactjs className="foot_icons ml-3 mt-1 text-blue-400"/>
+                <AiOutlineCloudUpload className="foot_icons ml-3 mt-1 text-white"/>
             </div>
             <div className="myname flex">
                 <AiFillHeart className="text-red-500 flex justify-center items-center text-center mt-1 ml-3"/>
