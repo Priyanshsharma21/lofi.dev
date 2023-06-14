@@ -1,12 +1,13 @@
 export const lofiArray = [
     {
-        pic: 'https://res.cloudinary.com/do5ljoll8/image/upload/v1686638081/lofi_images/iagmfav3ldi7zsnte4rm.jpg',
-
-        
-        music : 'https://res.cloudinary.com/do5ljoll8/video/upload/v1686638085/lofi_music/gfvdeu7uht8zreeex15d.mp3',
-        id : 1211,
-        title : "Thunder"
+        pic: 'https://res.cloudinary.com/do5ljoll8/image/upload/v1686637941/lofi_images/tpevcsflrmgjykwtbzeg.jpg',
+        music : 'https://res.cloudinary.com/do5ljoll8/video/upload/v1686749543/lofi_music/gtkuemwotfr7rcu82rhv.mp3',
+        id : 1214,
+        title : "Rain"
     },
+
+
+    
 
     {
         pic: 'https://res.cloudinary.com/do5ljoll8/image/upload/v1686637060/lofi_images/zv6l1e51ldu0fvdpl79c.jpg',
@@ -23,11 +24,15 @@ export const lofiArray = [
     },
 
     {
-        pic: 'https://res.cloudinary.com/do5ljoll8/image/upload/v1686637941/lofi_images/tpevcsflrmgjykwtbzeg.jpg',
-        music : 'https://res.cloudinary.com/do5ljoll8/video/upload/v1686637945/lofi_music/qgxofuxjp6yga0lalg6m.mp3',
-        id : 1214,
-        title : "Rain"
+        pic: 'https://res.cloudinary.com/do5ljoll8/image/upload/v1686638081/lofi_images/iagmfav3ldi7zsnte4rm.jpg',
+
+        
+        music : 'https://res.cloudinary.com/do5ljoll8/video/upload/v1686638085/lofi_music/gfvdeu7uht8zreeex15d.mp3',
+        id : 1211,
+        title : "Thunder"
     },
+
+    
 
     {
         pic: 'https://res.cloudinary.com/do5ljoll8/image/upload/v1686637893/lofi_images/khtcp7qa4qwtc6wckhmn.jpg',
