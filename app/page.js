@@ -3,6 +3,8 @@ import { Navbar,MainSection,Footer } from '../components'
 import Scrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll'
 import { useEffect } from 'react';
+import { ProductHunt } from '../components'
+
 
 var overscrollOptions = {
   enable : true,
@@ -36,6 +38,10 @@ const Home = ()=> {
   return (
     <main className="flex flex-col bg-black min-h-[100vh] w-full">
       <Navbar />
+
+        <div className="product_hunt_karo mt-10">
+          <ProductHunt />
+        </div>
 
           <div className="heading_of_app flex justify-center">
             <div className="relex head_text">relax</div>
